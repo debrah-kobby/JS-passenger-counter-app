@@ -1,29 +1,8 @@
 //DOM
-let countEl = document.getElementById("count-el");
-let saveEl = document.getElementById("save-el");
+let errorMessage = document.getElementById("errormessage");
 
-//VARIABLES
-let count = 0;
+//functions
 
-//FUNCTIONS
-function increment() {
-  count += 1;
-  countEl.textContent = count;
-  console.log(count);
-}
-function decrement() {
-  count -= 1;
-  countEl.textContent = count;
-  console.log(count);
-}
-
-function saveBtn() {
-  let countstr = count + " - ";
-  saveEl.textContent += countstr;
-  countEl.textContent = 0;
-  count = 0;
-}
-
-function clearBtn() {
-  saveEl.textContent = "Previous Entries: ";
+function purchaseBtn() {
+  errorMessage.textContent = "Something went wrong please try again";
 }

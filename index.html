@@ -4,27 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Class Counter</title>
+    <title>Document</title>
   </head>
   <body>
-    <h1>Students in class</h1>
-    <h2 id="count-el">0</h2>
+    <div class="Game-ship-heading"><p>PS4 CONTROLLER</p></div>
+    <div class="gamepad-img-div"><img src="gamepad3D1.jpg" alt="" /></div>
 
-    <div class="buttons">
-      <button id="increment-btn" onclick="increment()">Increase</button>
-      <button id="decrement-btn" onclick="decrement()">Decrease</button>
-    </div>
-
-    <div class="save-btn">
-      <button id="save-btn" onclick="saveBtn()">Save</button>
-    </div>
-    <div class="save-btn">
-      <button id="clear-btn" onclick="clearBtn()">Clear Entries</button>
+    <div class="purchase-button-div">
+      <button class="button-tag-itself" onclick="purchaseBtn()">
+        PURCHASE -- $99.09
+      </button>
     </div>
 
-    <div>
-      <p id="save-el">Previous Entries:</p>
-    </div>
+    <div><p id="errormessage"></p></div>
 
     <script src="index.js"></script>
   </body>
