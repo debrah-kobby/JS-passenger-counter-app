@@ -1,0 +1,78 @@
+/* Base styling */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: bisque;
+  font-size: 1.5rem;
+  border: 3px solid blue;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+/* Button container layout */
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Button styling */
+button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  flex: 1 1 auto;
+  min-width: 120px;
+}
+
+button:hover {
+  background-color: rgb(44, 44, 218);
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+#decrement-btn {
+  background-color: red;
+}
+
+#save-btn {
+  background-color: blueviolet;
+}
+
+/* Save button spacing */
+.save-btn {
+  margin-top: 1.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  body {
+    font-size: 1.2rem;
+    margin-top: 6rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.8rem;
+    width: 100%;
+  }
+}
