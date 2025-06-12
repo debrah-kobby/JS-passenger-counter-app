@@ -13,7 +13,7 @@ function increment() {
 }
 function decrement() {
   count -= 1;
-  countEl.innerText = count;
+  countEl.textContent = count;
   console.log(count);
 }
 
@@ -22,4 +22,8 @@ function saveBtn() {
   saveEl.textContent += countstr;
   countEl.textContent = 0;
   count = 0;
+}
+
+function clearBtn() {
+  saveEl.textContent = "Previous Entries: ";
 }
