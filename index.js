@@ -5,7 +5,7 @@ let result = document.getElementById("results");
 
 let assignedNum_1 = (document.getElementById("num_1").textContent =9 );
 
-let assignedNum_2 = (document.getElementById("num_2").textContent =7 );
+let assignedNum_2 = (document.getElementById("num_2").textContent =5 );
 
 function addBtn() {
   let addition = Number(assignedNum_1) + Number(assignedNum_2);
