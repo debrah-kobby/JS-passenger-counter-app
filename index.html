@@ -3,20 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="Game-ship-heading"><p>PS4 CONTROLLER</p></div>
-    <div class="gamepad-img-div"><img src="gamepad3D1.jpg" alt="" /></div>
-
-    <div class="purchase-button-div">
-      <button class="button-tag-itself" onclick="purchaseBtn()">
-        PURCHASE -- $99.09
-      </button>
+    <div>
+      <div class="numbers_div">
+        <p id="num_1"></p>
+        <p id="num_2"></p>
+      </div>
+      <div class="overall_button_divs">
+        <div><button class="add_button" onclick="addBtn()">Add</button></div>
+        <div>
+          <button class="subtract_button" onclick="subtractBtn()">
+            Subtract
+          </button>
+        </div>
+        <div>
+          <button class="divide_button" onclick="divideBtn()">Divide</button>
+        </div>
+        <div>
+          <button class="multiply_button" onclick="multiplyBtn()">
+            Multiply
+          </button>
+        </div>
+      </div>
+      <div class="results_div"><p id="results"></p></div>
     </div>
-
-    <div><p id="errormessage"></p></div>
 
     <script src="index.js"></script>
   </body>

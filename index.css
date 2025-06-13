@@ -1,4 +1,3 @@
-/*//RESET*/
 * {
   margin: 0;
   padding: 0;
@@ -16,56 +15,58 @@ button,
 textarea {
   font: inherit;
 }
-/*//RESET*/
-body{
-  border: 2px solid blue;
-  padding: 1rem;
+body {
+  border: 2px solid black;
   width: 500px;
   margin: 0 auto;
-  margin-top: 3rem;
-  background-color: rgb(221, 220, 220);
+  margin-top: 5rem;
+  padding: 1rem;
 }
-.Game-ship-heading{
+.numbers_div {
+  display: flex;
+  justify-content: center;
+
+  gap: 0.7rem;
+}
+
+#num_1,
+#num_2 {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.overall_button_divs {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  font-weight: 800;
-  font-size: 2REM;
-
+  gap: 1rem;
 }
-
-.gamepad-img-div{
-  
-  width: 300px;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 2rem;
-}
-
-.purchase-button-div{
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.button-tag-itself{
-  background-color: gray;
-  padding: 0.8rem;
-  border: none;
+.add_button,
+.subtract_button,
+.divide_button,
+.multiply_button {
+  padding: 0.5rem;
   border-radius: 10px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  border: none;
+  background-color: rgb(190, 189, 189);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.3rem;
+  font-weight: 800;
 }
 
-.button-tag-itself:hover{
+.add_button:hover,
+.subtract_button:hover,
+.divide_button:hover,
+.multiply_button:hover {
   transform: scale(1.03);
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
-
-#errormessage{
+.results_div {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  color: red;
+  font-size: 2rem;
+  font-weight: 800;
 }
