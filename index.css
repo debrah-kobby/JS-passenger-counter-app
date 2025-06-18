@@ -1,84 +1,96 @@
-/* Base styling */
+/* Base Styles */
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-  background-color: bisque;
+  background-color: rgb(2, 83, 2);
   font-size: 1.5rem;
-  border: 3px solid blue;
+  font-weight: 900;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
   padding: 1rem;
-  box-sizing: border-box;
-  touch-action: none;
+  display: flex;
+  justify-content: center;
 }
 
-h1,
-h2 {
+.overall-body-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+h1 {
+  color: goldenrod;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+p {
+  color: white;
   text-align: center;
   margin: 0.5rem 0;
 }
 
-/* Button container layout */
-.buttons {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1rem;
+#message-el,
+#cards-el {
+  font-style: italic;
+  white-space: nowrap;
+  font-size: 1.2rem;
 }
 
-/* Button styling */
-button {
-  padding: 0.8rem 1.5rem;
-  border-radius: 10px;
-  border: none;
-  background-color: blue;
+#sum-el {
+  font-size: 1.2rem;
   color: white;
+  font-weight: normal;
+}
+
+button {
+  width: 100%;
+  max-width: 250px;
+  background-color: goldenrod;
+  border: none;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  color: green;
   font-size: 1rem;
-  flex: 1 1 auto;
-  min-width: 120px;
-  touch-action: manipulation;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 button:hover {
-  background-color: rgb(44, 44, 218);
   cursor: pointer;
-  transform: scale(1.03);
-  transition: all 0.3s ease;
+  background-color: rgb(184, 142, 36);
+  transition: all 0.3s ease-in;
 }
 
-#decrement-btn {
+#resetBtn {
   background-color: red;
+  color: white;
 }
 
-#save-btn {
-  background-color: blueviolet;
-}
-
-/* Save button spacing */
-.save-btn {
-  margin-top: 1.5rem;
-}
-#clear-btn {
-  background-color: brown;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 480px) {
+/* ✅ Responsive Font Sizes */
+@media (max-width: 600px) {
   body {
-    font-size: 1.2rem;
-    margin-top: 6rem;
+    font-size: 1rem;
   }
 
-  .buttons {
-    flex-direction: column;
-    gap: 0.75rem;
+  h1 {
+    font-size: 2rem;
+  }
+
+  #message-el,
+  #cards-el,
+  #sum-el {
+    font-size: 1rem;
   }
 
   button {
-    font-size: 1rem;
-    padding: 0.8rem;
-    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.5rem;
   }
 }

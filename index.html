@@ -4,28 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Class Counter</title>
+    <title>Document</title>
   </head>
   <body>
-    <h1>Students in class</h1>
-    <h2 id="count-el">0</h2>
-
-    <div class="buttons">
-      <button id="increment-btn" onclick="increment()">Increase</button>
-      <button id="decrement-btn" onclick="decrement()">Decrease</button>
+    <div class="overall-body-div">
+      <h1>BlackJack</h1>
+      <p id="message-el">Want to play a round?</p>
+      <p id="cards-el">Cards:</p>
+      <p id="sum-el">Sum:</p>
+      <div>
+        <button onclick="startGame()">START GAME</button>
+        <button onclick="resetBtn()" id="resetBtn">RESET</button>
+      </div>
     </div>
-
-    <div class="save-btn">
-      <button id="save-btn" onclick="saveBtn()">Save</button>
-    </div>
-    <div class="save-btn">
-      <button id="clear-btn" onclick="clearBtn()">Clear Entries</button>
-    </div>
-
-    <div>
-      <p id="save-el">Previous Entries:</p>
-    </div>
-
     <script src="index.js"></script>
   </body>
 </html>
