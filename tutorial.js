@@ -13,12 +13,10 @@ function thirdFunc(a, b) {
   console.log(a / b - 3);
 }
 thirdFunc(4, 1);
- */
 
-/* function minusSeven(num) {
+function minusSeven(num) {
   return num - 7;
-}
- */
+} */
 
 /* var myArray = [50, "people"];
 var ourArray = myArray[0];
@@ -366,3 +364,5 @@ let nameAndGreetings = greetings + ", " + name;
 function funcForWelcome() {
   welcomePg.innerText = nameAndGreetings;
   console.log(welcomePg); }*/
+
+console.log(" Welcome to Kalcart, Prince");
